@@ -1,0 +1,292 @@
+
+
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px auto;
+  grid-gap: 4px;
+  grid-template-areas:
+  "welcome-text middle-picture button-container"
+  "image-two middle-picture bye-text"
+  "footer footer footer"
+}
+
+.welcome-container{
+  position: relative;
+  display: block;
+  background-color: #FFC964;
+  color: black;
+  grid-area: welcome-text;
+}
+
+.welcome-bg-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  color: #FFC964;
+}
+
+.welcome-container:hover .welcome-overlay {
+  opacity: .9 !important;
+}
+
+
+.image-two{
+  background-image: url("../../assets/images/muzikale-avond.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  background-color: #ababab;
+  grid-area: image-two;
+}
+
+.image-two-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFC964;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.image-two .muzikale-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  color: #FFC964;
+}
+
+.image-two:hover .muzikale-overlay {
+  opacity: .9 !important;
+}
+
+
+.bye-container{
+  position: relative;
+  display: block;
+  background-color: #FFC964;
+  color: black;
+  grid-area: bye-text;
+}
+
+.bye-bg-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bye-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  color: #FFC964;
+}
+
+.bye-container:hover .bye-overlay {
+  opacity: .9 !important;
+}
+
+.button-container{
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/floral-2.jpg");
+  background-position: center;
+  grid-area: button-container;
+}
+
+.button-container .button-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  font-size: 16px;
+  color: #FFC964;
+}
+
+.button-container:hover .button-overlay {
+  opacity: .9 !important;
+}
+
+.button-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFC964;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.middle-picture{
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/profile-forest-bg-black.jpg");
+  background-position: center;
+  grid-area: middle-picture;
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas:
+  "software-list"
+  "java-traineeship";
+}
+
+.middle-picture-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: #FFC964;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.middle-picture .middle-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  font-size: 16px;
+  color: #FFC964;
+}
+
+.middle-picture:hover .middle-overlay {
+  opacity: .9 !important;
+}
+
+.software-list{
+  grid-area: software-list;
+}
+.java-traineeship{
+  grid-area: java-traineeship;
+}
+
+.list-title{
+  list-style-type: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul{
+  margin-left: 5px;
+}
+li {
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+.cv-text{
+  padding: 10px;
+}
+
+.uu{
+  text-align: right;
+}
+.first-col{
+  width: 125px;
+}
+
+.r-al{
+  text-align: right;
+}
+
+.welcome-container p{
+  margin: 12px;
+}
+
+.fa{
+  padding: 20px;
+  font-size: 56px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-group .btn {
+  margin: 14px;
+  cursor: pointer; /* Pointer/hand icon */
+  display: inline-block; /* Make the buttons appear below each other */
+  background-color: black;
+  color: #FFC964;
+  border-radius: 1px;
+  border-color: #FFC964;
+}
+
+.cv-text-icon{
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.btn-group{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  left: auto;
+  -ms-transform: translateY(50%);
+  transform: translateY(60%);
+}
+
+.footer{
+  display: block;
+  background-image: linear-gradient(black, #FFF5E2);
+  height: 500px; /* fade to backgroundcolour */
+  grid-area: footer;
+}

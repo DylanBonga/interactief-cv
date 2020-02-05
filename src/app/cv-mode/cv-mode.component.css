@@ -1,0 +1,175 @@
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  grid-gap: 4px;
+  grid-template-areas:
+  "welcome-text middle-picture button-container"
+  "image-two middle-picture bye-text"
+}
+
+.welcome-container{
+  position: relative;
+  display: container;
+  background-color: #ededed;
+  grid-area: welcome-text;
+}
+
+.welcome-bg-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 130px;
+  color: black;
+}
+
+.welcome-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  transition: .5s ease;
+  background-color: black;
+  color: white;
+}
+
+.welcome-container:hover .welcome-overlay {
+  opacity: 1;
+}
+
+
+.image-one{
+  display: block;
+  background-color: #cdcdcd;
+}
+
+.image-two{
+  position: relative;
+  display: block;
+  background-color: #ababab;
+  grid-area: image-two;
+}
+
+.image-two img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-two .muzikale-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  transition: .5s ease;
+  background-color: black;
+  color: white;
+}
+
+.image-two:hover .muzikale-overlay {
+  opacity: 1;
+}
+
+
+.bye-container{
+  position: relative;
+  display: container;
+  background-color: #ededed;
+  grid-area: bye-text;
+}
+
+.bye-bg-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 130px;
+  color: black;
+}
+
+.bye-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  transition: .5s ease;
+  background-color: black;
+  color: white;
+}
+
+.bye-container:hover .bye-overlay {
+  opacity: 1;
+}
+
+.image-one img{
+  vertical-align: middle;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer{
+  display: block;
+  background-color: white;
+}
+
+.button-container{
+  position: relative;
+  width: 100%;
+  height: auto;
+  grid-area: button-container;
+}
+
+.button-container img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.button-container .act-button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 24px;
+  background-color: white;
+  color: black;
+  padding: 16px 30px;
+  border-radius: 1px;
+  border-color: black;
+  text-align: center;
+}
+
+.middle-picture{
+  position: relative;
+  grid-area: middle-picture;
+  width: 100%;
+}
+.middle-picture .middle-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  transition: .5s ease;
+  background-color: black;
+  color: white;
+}
+
+.middle-picture:hover .middle-overlay {
+  opacity: 1;
+}

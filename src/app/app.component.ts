@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'interactief-cv';
+
+  cvModeBool : boolean = false;
+  cvMode(){
+    this.cvModeBool = !this.cvModeBool;
+    // Add if-statement
+    if(this.cvModeBool == true){
+      document.getElementById('welcome-o').style.opacity = "0.9";
+      document.getElementById('middle-o').style.opacity = "0.9";
+      document.getElementById('muzikale-o').style.opacity = "0.9";
+      document.getElementById('button-o').style.opacity = "0.9";
+      document.getElementById('bye-o').style.opacity = "0.9";
+    }else{
+      document.getElementById('welcome-o').style.opacity = "0";
+      document.getElementById('middle-o').style.opacity = "0";
+      document.getElementById('muzikale-o').style.opacity = "0";
+      document.getElementById('button-o').style.opacity = "0";
+      document.getElementById('bye-o').style.opacity = "0";
+    }
+
+
+  }
 }

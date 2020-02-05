@@ -1,0 +1,41 @@
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <button class="content-title" (click)="toggleNEXT()"> Traineeship Java<br>Young Capital NEXT </button>
+      <div *ngIf="!NEXTCollapsed">
+      <p>2019 - Present</p>
+      <p> During this Traineeship, I learned programming in Java.
+      The training consisted of two parts. The first one focussed on learning Java from the very basics and
+      ended with passing the Oracle Certified Associate Java SE 8 (OCA) exam. In the second part of the training
+      we build a web application. Constructing this application was done by using frameworks such as Spring Boot and Angular. </p>
+      </div>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <button class="content-title" (click)="toggleSA()"> Student Assistentships </button>
+      <div *ngIf="!SACollapsed">
+        <p>2018 - 2019</p>
+        <p> While doing my master's, I worked as a Student Assistent on two courses, both on Computational Linguistics.
+        These courses taught students the basics of programming in Python, as well as how to use Python as a tool to study Linguistics.
+        I taught work groups of up to fifteen students, starting from "Hello world" and ending with building their own Named Entity Recognizer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <button class="content-title" (click)="toggleTUT()"> Tutoring </button>
+      <div *ngIf="!TUTCollapsed">
+      <p>2014 - 2019</p>
+      <p> I have been tutoring from the first year of my bachelor's to the last year of my master's. While it was mostly private tutoring
+      high school students in subjects such as mathematics, Dutch, and English, I also did tutoring in linguistics, statistics, and mathematics
+      to university students. </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container right">
+    <div class="content">
+
+    </div>
+  </div> -->
+</div>

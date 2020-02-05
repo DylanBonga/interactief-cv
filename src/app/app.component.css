@@ -1,0 +1,35 @@
+.header .title {
+  margin: 30px 30px;
+  grid-area: title;
+}
+
+.header{
+  background-color: black;
+  color: #FFC964;
+  display: grid;
+  margin-bottom: 5px;
+  grid-template-columns: auto 200px;
+  grid-template-areas:
+  "title act-button";
+}
+
+.header .act-button{
+  grid-area: act-button;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  background-color: black;
+  color: #FFC964;
+  padding: 16px 30px;
+  margin: 10px 10px;
+  border-radius: 1px;
+  border-color: #FFC964;
+  text-align: center;
+
+  font-weight: bold;
+}
+
+.header .act-button:active{
+  background-color: black;
+  color: white;
+}
