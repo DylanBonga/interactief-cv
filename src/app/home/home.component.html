@@ -1,23 +1,18 @@
 
 <div class="main-content">
-  <div class="welcome-container">
-    <div class="welcome-bg-text">
+  <div class="orange-container" id="welcome-c">
+    <div class="black-text">
       WELCOME.
     </div>
-    <div class="welcome-overlay" id="welcome-o">
+    <div class="overlay" id="welcome-o">
       <div class="cv-text" id="welcome-t">
-        <p>On this page you will find information about me, Dylan Bonga.
+        <p>Welcome to my interactive resume!
         </p>
-        <p>In the middle panel you can
-          observe my experience with programming, as well as all topics I learned about in the Java Traineeship
-          provided by Young Capital NEXT. On the right you will find more information about my university career,
-          below that my LinkedIn and my CV. On the panel below this one, a brief summary of the things I spend my
-          free time on.
+        <p>On this page you will find information about my background, as well as about my personality.
+          Try hovering over the different panels or clicking some of the buttons to find out more.
         </p>
-        <p>Finally, below the panels you see a chronological overview of my previous work experience.
-          To see a brief summary, simply click the buttons.
         <p>
-          By clicking the CV-MODE button in the top right corner, you can see all information at once.
+          By clicking the CV-MODE button in the top right corner, you can see all information at the same time.
         </p>
       </div>
     </div>
@@ -27,60 +22,16 @@
     <div class="middle-picture-text">
       ME.
     </div>
-    <div class="middle-overlay" id="middle-o">
+    <div class="overlay" id="middle-o">
       <div class="cv-text">
-        <div class="software-list">
-          <div class="list-title">Software</div>
-          <ul>
-            <li>Java SE8</li>
-            <li>Scrum</li>
-            <li>Python</li>
-            <li>R Studio</li>
-            <li>LaTeX</li>
-          </ul>
-        </div>
-
-        <div class="java-traineeship">
-          <div class="list-title">Topics studied in Java Traineeship</div>
-          <ul>
-            <li>HTML5 and CSS3</li>
-            <li>GIT</li>
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>AJAX</li>
-            <li>REST</li>
-            <li>HTTP</li>
-            <li>UML and design</li>
-            <li>Databases and SQL</li>
-            <li>Spring Data</li>
-            <li>TDD + Unit testing</li>
-            <li>Continuous Integration with Jenkins</li>
-            <li>Deployment on server (digitalOcean, Heroku)</li>
-
-          </ul>
-        </div>
       </div>
     </div>
   </div>
-
-  <div class="image-two">
-    <div class="image-two-text">
-      HOBBIES.
-    </div>
-    <div class="muzikale-overlay" id="muzikale-o">
-      <div class="cv-text">
-        I spend my free time writing music and comedy sketches, being part of a cabaret duo.
-        Further, I enjoy drawing and painting, and going on city trips and cooking. Additionally,
-        I like to pick up personal programming projects.
-      </div>
-    </div>
-  </div>
-
   <div class="button-container">
-    <div class="button-text">
+    <div class="orange-text">
       EDUCATION.
     </div>
-    <div class="button-overlay" id="button-o">
+    <div class="overlay" id="button-o">
       <div class="cv-text">
         <table>
           <tr>
@@ -121,12 +72,85 @@
       </div>
     </div>
   </div>
+  <div class="image-two">
+    <div class="orange-text">
+      HOBBIES.
+    </div>
+    <div class="overlay" id="muzikale-o">
+      <div class="cv-text">
+        I spend my free time writing music and comedy sketches, being part of a cabaret duo.
+        Further, I enjoy drawing and painting, and going on city trips and cooking. Additionally,
+        I like to pick up personal programming projects.
+      </div>
+    </div>
+  </div>
 
-  <div class="bye-container">
-    <div class="bye-bg-text">
+  <div class="orange-container" id="software-c">
+    <div class="black-text">
+      SOFTWARE.
+    </div>
+    <div class="overlay" id="software-o">
+      <div class="cv-text">
+        <div class="software-list">
+          <div class="list-title">Software</div>
+          <ul>
+            <li>Java SE8</li>
+            <li>Scrum</li>
+            <li>Python</li>
+            <li>R Studio</li>
+            <li>LaTeX</li>
+          </ul>
+        </div>
+
+        <div class="java-traineeship">
+          <div class="list-title">Topics studied in Java Traineeship</div>
+          <ul>
+            <li>HTML5 and CSS3</li>
+            <li>GIT</li>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>AJAX</li>
+            <li>REST</li>
+            <li>HTTP</li>
+            <li>UML and design</li>
+            <li>Databases and SQL</li>
+            <li>Spring Data</li>
+            <li>TDD + Unit testing</li>
+            <li>Continuous Integration with Jenkins</li>
+            <li>Deployment on server (digitalOcean, Heroku)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="work-container" id="work-c">
+    <div class="work-button-one">
+      <button class="content-title" (click)="toggleNEXT()"> Traineeship Java<br>Young Capital NEXT </button>
+      <div *ngIf="!NEXTCollapsed">
+      <p>2019 - Present</p>
+      <p> During this Traineeship, I learned programming in Java.
+      The training consisted of two parts. The first one focussed on learning Java from the very basics and
+      ended with passing the Oracle Certified Associate Java SE 8 (OCA) exam. In the second part of the training
+      we build a web application. Constructing this application was done by using frameworks such as Spring Boot and Angular. </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="orange-container" id="linguistics-c">
+    <div class="black-text">
+      LINGUISTICS.
+    </div>
+    <div class="overlay" id="ling-o">
+      <div class="cv-text">
+      </div>
+    </div>
+  </div>
+  <div class="orange-container" id="links-c">
+    <div class="black-text">
       LINKS.
     </div>
-    <div class="bye-overlay" id="bye-o">
+    <div class="overlay" id="bye-o">
       <div class="cv-text-icon">
         <div class="btn-group">
           <a href="https://www.linkedin.com/in/d-bonga/" target="_blank">
@@ -136,7 +160,9 @@
           </a>
           <a>
             <button class="btn">
-              <i class="fa fa-download"></i>
+              <a href="../assets/DylanBonga.pdf" download>
+                <i class="fa fa-download"></i>
+              </a>
             </button>
           </a>
           <a routerLink="/contact">

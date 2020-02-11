@@ -25,7 +25,5 @@ export class AppComponent {
       document.getElementById('button-o').style.opacity = "0";
       document.getElementById('bye-o').style.opacity = "0";
     }
-
-
   }
 }
