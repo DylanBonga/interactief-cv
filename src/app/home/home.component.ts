@@ -8,5 +8,22 @@ import { Component, Input } from '@angular/core';
 })
 
 export class HomeComponent{
-  
+  NEXTCollapsed : boolean = true;
+  SACollapsed : boolean = true;
+  TUTCollapsed : boolean = true;
+  LINGCollapsed : boolean = true;
+
+
+  toggleNEXT(){
+    this.NEXTCollapsed = !this.NEXTCollapsed;
+  }
+  toggleSA(){
+    this.SACollapsed = !this.SACollapsed;
+  }
+  toggleTUT(){
+    this.TUTCollapsed = !this.TUTCollapsed;
+  }
+  toggleLING(){
+    this.LINGCollapsed = !this.LINGCollapsed;
+  }
 }

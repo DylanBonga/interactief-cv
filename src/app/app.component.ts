@@ -15,14 +15,18 @@ export class AppComponent {
     if(this.cvModeBool == true){
       document.getElementById('welcome-o').style.opacity = "0.9";
       document.getElementById('middle-o').style.opacity = "0.9";
+      document.getElementById('edu-o').style.opacity = "0.9";
       document.getElementById('muzikale-o').style.opacity = "0.9";
-      document.getElementById('button-o').style.opacity = "0.9";
+      document.getElementById('software-o').style.opacity = "0.9";
+      document.getElementById('ling-o').style.opacity = "0.9";
       document.getElementById('bye-o').style.opacity = "0.9";
     }else{
       document.getElementById('welcome-o').style.opacity = "0";
       document.getElementById('middle-o').style.opacity = "0";
+      document.getElementById('edu-o').style.opacity = "0";
       document.getElementById('muzikale-o').style.opacity = "0";
-      document.getElementById('button-o').style.opacity = "0";
+      document.getElementById('software-o').style.opacity = "0";
+      document.getElementById('ling-o').style.opacity = "0";
       document.getElementById('bye-o').style.opacity = "0";
     }
   }

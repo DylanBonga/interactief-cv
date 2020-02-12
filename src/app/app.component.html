@@ -1,5 +1,17 @@
 <header>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    $(window).resize(function() {
+      var mobileWidth =  (window.innerWidth > 0) ?
+                          window.innerWidth :
+                          screen.width;
+      var viewport = (mobileWidth > 360) ?
+                      'width=device-width, initial-scale=1.0' :
+                      'width=1200';
+      $("meta[name=viewport]").attr('content', viewport);
+    }).resize();
+  </script>
 </header>
 
 <body>
