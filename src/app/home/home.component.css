@@ -1,17 +1,44 @@
 .main-content{
+  background-image: linear-gradient(#FFF5E2, black);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 300px 300px 300px auto;
   grid-gap: 4px;
   grid-template-areas:
-  "welcome-text middle-picture button-container"
+  "welcome-text middle-picture edu-container"
   "image-two middle-picture software"
   "panel-work panel-work software"
   "links ling-pic ling-pic"
   "footer footer footer"
 }
 
+.work-container{
+  background-image: url("../../assets/images/work.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-area: panel-work;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "button-one button-two"
+  "button-three button-four"
+}
 
+.work-button-one{
+  grid-area: button-one;
+}
+.work-button-two{
+  grid-area: button-two;
+}
+.work-button-three{
+  grid-area: button-three;
+}
+.work-button-four{
+  grid-area: button-four;
+}
 .orange-container{
   position: relative;
   display: block;
@@ -64,6 +91,19 @@
   color: #FFC964;
 }
 
+#button-1{
+  opacity: .9 !important;
+}
+#button-2{
+  opacity: .9 !important;
+}
+#button-3{
+  opacity: .9 !important;
+}
+#button-4{
+  opacity: .9 !important;
+}
+
 #welcome-c:hover #welcome-o{
   opacity: .9 !important;
 }
@@ -80,7 +120,7 @@
   opacity: .9 !important;
 }
 
-.button-container:hover #button-o{
+.edu-container:hover #edu-o{
   opacity: .9 !important;
 }
 
@@ -115,14 +155,14 @@
 
 
 
-.button-container{
+.edu-container{
   display: block;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../../assets/images/floral-2.jpg");
   background-position: center;
-  grid-area: button-container;
+  grid-area: edu-container;
 }
 
 .middle-picture{
@@ -159,6 +199,8 @@
 }
 
 .list-title{
+  margin-top: 16px;
+  margin-bottom: 16px;
   list-style-type: none;
   font-weight: bold;
   text-align: center;
@@ -166,6 +208,8 @@
 
 ul{
   margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 li {
   margin-left: 5px;
@@ -174,17 +218,14 @@ li {
 
 .cv-text{
   padding: 10px;
+  text-align: justify;
 }
 
-.uu{
-  text-align: right;
-}
 .first-col{
-  width: 125px;
+  width: 90px;
 }
-
-.r-al{
-  text-align: right;
+.uu{
+  width:auto;
 }
 
 .welcome-container p{
@@ -226,11 +267,34 @@ li {
 
 .footer{
   display: block;
-  background-image: linear-gradient(black, #FFF5E2);
-  height: 500px; /* fade to backgroundcolour */
+  height: 250px; /* fade to backgroundcolour */
   grid-area: footer;
 }
 
 .fa{
   color: #FFC964;
+}
+
+.content-title {
+  position: relative;
+  font-weight: bold;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  border-color: #FFC964;
+  padding: 14px 16px;
+  margin: 10px 10px;
+  background-color: #FFF5E2;
+}
+
+.content-title:hover{
+  background-color: #D7A545;
+}
+
+.lingo-container{
+  position: relative;
+  background-image: url("../../assets/images/linguistics.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }

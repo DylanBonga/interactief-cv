@@ -24,48 +24,66 @@
     </div>
     <div class="overlay" id="middle-o">
       <div class="cv-text">
+        <div class="list-title">
+          ATTENTIVE
+        </div>
+        I put effort into helping the people around me. Both on a personal and a professional level,
+        I make time to slow down and get people up to speed, if necessary. This is something I value
+        greatly in myself, but also in others. This trait emerged most in my work as a private tutor and
+        student assistant.
+        <div class="list-title">
+          SENSIBLE
+        </div>
+        I consider myself sensible, <i>think before you speak</i>. I like to take time to think
+        about different approaches to a problem and consider different options. While this approach
+        can be time consuming, it might also save time in the future. On the other hand, I can be
+        assertive when needed, when a quick solution is required.
+        <div class="list-title">
+          DILIGENT
+        </div>
+        Although I enjoy working in a team of motivated colleagues, I have learned to work by myself
+        in a efficient and persistent manner. For instance, during my master's I worked on my own project for
+        nine months, gathering data, interpreting these data, and writing my thesis. I learned a great deal from this,
+        most importantly the importance of self-motivation and propper planning. I prefer working in a team,
+        instead of alone, because having colleagues fascilitates both a learning environment and a healthy
+        form of competition.
       </div>
     </div>
   </div>
-  <div class="button-container">
+  <div class="edu-container">
     <div class="orange-text">
       EDUCATION.
     </div>
-    <div class="overlay" id="button-o">
+    <div class="overlay" id="edu-o">
       <div class="cv-text">
         <table>
           <tr>
             <td class="first-col">2017-2019</td>
             <td class="uu">Utrecht University</td>
+          </tr><tr>
+            <td colspan="2" style="font-weight:bold">Master of Arts: Linguistics (research) </td>
           </tr>
           <tr>
-            <td class="r-al">Master of Arts: </td>
-            <td>Linguistics (research)</td>
-          </tr>
-          <tr>
-            <td class="r-al">Thesis title:</td>
-            <td> Cyberspatial Semantics: The behaviour of prepositions in software development forums</td>
-          </tr>
-          <tr>
-            <td class="r-al">Main focus: </td>
-            <td>Computational Linguistics</td>
+            <td colspan="2">
+              During my master's I discovered my fondness for programming.
+                I oriented myself mostly towards computational linguistics and
+                wrote my thesis on the use of prepositions in software forums.
+                I gathered my own data by using web scraping techniques.
+            </td>
           </tr>
           <tr><br></tr>
           <tr>
             <td>2013-2017</td>
             <td class="uu">Utrecht University</td>
+          </tr><tr>
+            <td colspan="2" style="font-weight:bold">Bachelor of Arts: Dutch Language and Culture</td>
           </tr>
           <tr>
-            <td class="r-al">Bachelor of Arts:</td>
-            <td>Dutch Language and Culture</td>
-          </tr>
-          <tr>
-            <td class="r-al">Thesis title:</td>
-            <td>Dat ik gisteren 'm heb gezien: sterke en zwakke pronomina in scrambling</td>
-          </tr>
-          <tr>
-            <td class="r-al">Minor:</td>
-            <td> General Linguistics</td>
+            <td colspan="2">
+              In my bachelor's I took courses ranging from literature studies,
+              to philosophy, to gender studies, and mostly to linguistics. I wrote
+              my thesis on the use of weak and strong pronouns in the Dutch language.
+            </td>
           </tr>
         </table>
 
@@ -78,9 +96,11 @@
     </div>
     <div class="overlay" id="muzikale-o">
       <div class="cv-text">
-        I spend my free time writing music and comedy sketches, being part of a cabaret duo.
-        Further, I enjoy drawing and painting, and going on city trips and cooking. Additionally,
-        I like to pick up personal programming projects.
+        I spend my free time writing and playing music. I also write songs and comedy sketches
+        as part of a cabaret duo. We are currently writing towards our first public performance.
+        Further, I enjoy drawing and painting, or any other kind of creative activity I come up with.
+        When I get out of the house every once in a while, I enjoy going on city trips or going to concerts.
+        Additionally, I like to pick up personal programming projects.
       </div>
     </div>
   </div>
@@ -123,26 +143,92 @@
       </div>
     </div>
   </div>
+
   <div class="work-container" id="work-c">
     <div class="work-button-one">
-      <button class="content-title" (click)="toggleNEXT()"> Traineeship Java<br>Young Capital NEXT </button>
+      <button class="content-title" (click)="toggleNEXT()" *ngIf="(NEXTCollapsed&&SACollapsed&&TUTCollapsed&&LINGCollapsed)"> Traineeship Java </button>
       <div *ngIf="!NEXTCollapsed">
-      <p>2019 - Present</p>
-      <p> During this Traineeship, I learned programming in Java.
-      The training consisted of two parts. The first one focussed on learning Java from the very basics and
-      ended with passing the Oracle Certified Associate Java SE 8 (OCA) exam. In the second part of the training
-      we build a web application. Constructing this application was done by using frameworks such as Spring Boot and Angular. </p>
+        <div class="overlay" id="button-1">
+          <div class="cv-text">
+          <button class="back" (click)="toggleNEXT()"> Back </button>
+          <p>2019 - Present</p>
+          <p> During this Traineeship, I learned programming in Java.
+          The training consisted of two parts. The first one focussed on learning Java from the very basics and
+          ended with passing the Oracle Certified Associate Java SE 8 (OCA) exam. In the second part of the training
+          we build a web application. Constructing this application was done by using frameworks such as Spring Boot and Angular. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-button-two" >
+        <button class="content-title" (click)="toggleSA()" *ngIf="(NEXTCollapsed&&SACollapsed&&TUTCollapsed&&LINGCollapsed)"> Student Assistantships </button>
+        <div *ngIf="!SACollapsed">
+          <div class="overlay" id="button-2">
+            <div class="cv-text">
+              <button class="back" (click)="toggleSA()"> Back </button>
+              <p>2018 - 2019</p>
+              <p> While doing my master's, I worked as a Student Assistant on two courses, both on Computational Linguistics.
+              These courses taught students the basics of programming in Python, as well as how to use Python as a tool to study Linguistics.
+              I taught work groups of up to fifteen students, starting from "Hello world" and ending with building their own Named Entity Recognizer.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="work-button-three">
+      <button class="content-title" (click)="toggleTUT()" *ngIf="(NEXTCollapsed&&SACollapsed&&TUTCollapsed&&LINGCollapsed)"> Tutoring </button>
+      <div *ngIf="!TUTCollapsed">
+        <div class="overlay" id="button-3">
+          <div class="cv-text">
+            <button class="back" (click)="toggleTUT()"> Back </button>
+            <p>2014 - 2019</p>
+            <p> I have been tutoring from the first year of my bachelor's to the last year of my master's. While it was mostly private tutoring
+            high school students in subjects such as mathematics, Dutch, and English, I also did tutoring in linguistics, statistics, and mathematics
+            to university students. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-button-four">
+      <button class="content-title" (click)="toggleLING()" *ngIf="(NEXTCollapsed&&SACollapsed&&TUTCollapsed&&LINGCollapsed)"> LingUU </button>
+      <div *ngIf="!LINGCollapsed">
+        <div class="overlay" id="button-4">
+          <div class="cv-text">
+            <button class="back" (click)="toggleLING()"> Back </button>
+            <p>2018 - 2019</p>
+            <p> Secretary: as a secretary I was responsible for taking minutes,
+            keeping the reviewer database up-to-date, and answering emails.</p>
+            <p>Handling editor: contacting authors and (anonymous) reviewers,
+            formulating an editorial advice, and helping authors towards
+            their publication are my primary focus as handling editor. </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
 
-  <div class="orange-container" id="linguistics-c">
-    <div class="black-text">
-      LINGUISTICS.
+  <div class="lingo-container" id="linguistics-c">
+    <div class="orange-text">
+      /lɪŋˈgwɪstɪks/.
     </div>
     <div class="overlay" id="ling-o">
       <div class="cv-text">
+        <p>I have a great passion for language and linguistics, the science that studies languages.
+          What fascinates me most is computational modeling. While it has scientific value,
+          it is also directly applicable to software used for (for instance) chatbots.</p>
+        <p>Linguistic research is very broad, which makes it so great! It directly helps the development of language-based software. It also
+          gives insight in how children learn language, how adults learn new languages or how
+          to help patients that suffer from brain damage.</p>
+        <p>
+          My own research was mostly oriented towards experimental and computational linguistics. This
+          resulted in two publications. The first one is a research proposal I wrote on automatic error recognition
+          which is accessable here: <a href="https://lnkd.in/dv9j4ns" target="_blank">(link)</a>. </p>
+        <p>Further, I enjoy experimental research. I co-authored a research paper on one of
+          the experiments we conducted during my master's. This experiment
+          showed that there are different priming effects for different cognitive relations between words. <a href="https://lnkd.in/dpwNuA6" target="_blank">(link)</a></p>
       </div>
     </div>
   </div>
@@ -176,7 +262,7 @@
   </div>
 
   <span class="footer">
-    <timeline></timeline>
+
   </span>
 
 

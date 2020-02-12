@@ -29,7 +29,7 @@
   font-weight: bold;
 }
 
-.header .act-button:active{
-  background-color: black;
+.header .act-button:hover{
+  background-color: #D7A545;
   color: white;
 }
